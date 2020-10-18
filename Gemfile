@@ -14,6 +14,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '3.4.1'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+# Use Font Awesome for unique Icons
+gem "font-awesome-rails"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes

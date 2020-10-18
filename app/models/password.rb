@@ -9,7 +9,7 @@ class Password < ApplicationRecord
 
 		def self.search(param)
 			param.strip!
-			to_send_back = (user_name_matches(param) + notes_matches(param)).uniq
+			to_send_back = (user_name_matches(param) + name_matches(param)).uniq
 			return nil unless to_send_back
 			to_send_back
 		end
@@ -18,8 +18,8 @@ class Password < ApplicationRecord
 			matches('user_name', param)
 		end
 
-		def self.notes_matches(param)
-			matches('notes', param)
+		def self.name_matches(param)
+			matches('name', param)
 		end
     
 end

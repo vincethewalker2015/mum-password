@@ -3,7 +3,7 @@
 
 body {
     padding-top: 70px; // ensures objects sit below the navbar
-    background: #000;
+    background: #000; 
   }
 
   .italics { // password color and style in index
@@ -36,6 +36,12 @@ body {
       color: #fff !important;
   }
 
+  .search-text {
+    color: #fff !important;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+
   .light-blue {
       color: #99ccff;
       font-size: 18px;
@@ -54,15 +60,35 @@ body {
       border: 2px solid #fff;
       border-radius: 10px;
     }
+    
+    
+    .inside-block{
+      margin-left: 60px;
+    }
+        
+      
+    
+    
+
+    .head-text {
+      color: #fff;
+      padding-left: 10px;
+    }
+
+    .result-text {
+      .btn {
+        margin: 3px;
+      }
+    }
 
     // Forms
 
-    .form-control::placeholder {
+   /* .form-control::placeholder {
       color: #fff;
     }
     .form-control {
       color: #fff;
-    }
+    } 
 
     .form-control::autocomplete {
       
@@ -83,7 +109,7 @@ body {
             h3 {
                 margin-left: 20px;
             }
-        }
+        } */
         //Devise Flash Warning
         .alert, .alert-alert {
             background-color:#fff3cd;
