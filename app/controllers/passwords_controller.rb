@@ -3,6 +3,28 @@ class PasswordsController < ApplicationController
   def index
     @passwords = Password.all
   end
+
+  def search 
+    if params[:name].present?
+      @passwords = params[:name].present?
+      @passwords = Password.search(params[:name])
+      if @passwords && @passwords.count > 0
+        respond_to do |format|
+        format.js { render partial: 'passwords/password_result' }
+      end
+      else
+        respond_to do |format|
+        flash.now[:danger] = "There are no result's found for this request.."
+        format.js { render partial: 'passwords/password_result' }
+      end
+      end
+    else
+      respond_to do |format|
+      flash.now[:alert] = "Please enter a Name"
+      format.js { render partial: 'passwords/password_result' }
+      end
+    end
+  end
     
   def new
     @password = Password.new

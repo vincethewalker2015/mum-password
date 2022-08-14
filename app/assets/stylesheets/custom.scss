@@ -124,3 +124,47 @@ body {
             border: 4px solid #fff;
             color: #fff;
         }
+
+        // Search Form
+        .m-top {
+            margin-top: 2px;
+        }
+
+        .search-description {
+            width: 100%;
+            overflow: scroll;
+          }
+        
+          .results-block {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            border: 2px solid #fff !important;
+            border-radius: 5px !important;
+            // margin-bottom: 6px;
+            padding: 5px;
+          }
+
+          .mt-1 {
+            margin-top: 1px;
+          }
+
+          .mt-2 {
+            margin-top: 2px;
+          }
+
+          .mt-5 {
+            margin-top: 5px;
+          }
+
+          .ml-5 {
+            margin-left: 5px;
+          }
+
+          .pt-5 {
+            padding-top: 5px;
+          }
+
+          .password-blue {
+            color: #00ffff;
+          }
+
