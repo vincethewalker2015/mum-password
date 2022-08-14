@@ -6,6 +6,10 @@ class ApplicationController < ActionController::Base
     redirect_to root_path, alert: 'Access Denied' unless current_user.admin?
   end
 
+  def after_sign_in_path_for(resource)
+    passwords_path # your path
+  end
+
   protected
 
   def configure_permitted_parameters
