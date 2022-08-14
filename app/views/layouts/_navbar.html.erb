@@ -13,6 +13,7 @@
                 <% if current_user %>
                   <li><%= link_to "Password Index", passwords_path, class: "btn btn-purple nav-but" %></li>
                   <li class="white"><%= link_to current_user.name if current_user %></li>
+                  <li class="white"><%= link_to "Change Your Password", edit_user_registration_path %></li>
                   <li><%= link_to "(Admin)" if current_user.admin? %></li>
                 <% end %>
             </ul>

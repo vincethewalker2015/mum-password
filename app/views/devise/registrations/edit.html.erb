@@ -2,6 +2,7 @@
   <div class="col-md-6 col-md-offset-4">
     <div class="well">
       <h2 class="text-center white">Edit User</h2>
+      <h4 class="text-center white">( Change your password here..)</h4>
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
         <%#= render "devise/shared/error_messages", resource: resource %>
         <%= devise_error_messages! %>
